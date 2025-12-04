@@ -10,17 +10,19 @@
 </head>
 <body>
     <header>
+        <!-- navigation -->
         <nav class="navigation">
              <h3>Resima Budhathoki</h3>
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><button>Contact</button></li>
             </ul>
         </nav>
     </header>
+   <!-- main body content  -->
     <main >
         <section class="portfolio-section">
             <div class="image-section">
@@ -34,20 +36,57 @@
 
             <h2 class="aboutme"><em>I am a passionate web developer, creating responsive and user-friendly websites.</em></h2>
             <aside> 
-                <img src="login.jpg" alt="Resima Budhathoki" width="300" height="300" title="Resima" class="myphoto"> 
+                <img src="./photos/login.jpg" alt="Resima Budhathoki" width="300" height="300" title="Resima" class="myphoto"> 
             </aside>
             <div>
                 <div> <b>10+</b> <p>projects</p></div>
                 <div> <b>3+</b> <p>languages</p></div>
                 <div> <b>2+</b> <p>years of learning</p></div>
             </div>
-            <button> <img src="image.png" alt="github icon" width="10px" height="10px"> View My Work</button>
+            <button>  View My Work</button>
             <button>Download CV</button>
             
         </section>
+
+        <section id="skills">
+            <h1>Skills and Technologies</h1>
+            <p>Technologies and tools I work with.</p>
+            <div class="Skills">
+                <div class="Languages">
+                <h2>Languages</h2>
+                <p>HTML, CSS, JavaScript, Python,C, C++</p></div>
+
+                <div class="Frameworks">
+                <h2>Frameworks</h2>
+                <p>React, Angular, Vue</p></div>
+                <div class="Tools">
+                <h2>Tools</h2>
+                <p>Git,VS code</p></div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <p>Here are some of my recent projects.</p>
+            <div>
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>A web application for task management.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>An e-commerce website for local businesses.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>A personal blog platform with CMS features.</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- last part of the website -->
     <footer>
-        <div>
+        <div class="contact-info">
             <h1>Get in Touch</h1>
             <p>Contact me for collaborations, projects, or just to say hello!</p>
 
@@ -62,13 +101,15 @@
             <span>Instagram</span>
         </div>
         </div>
-        <aside>        
+
+        <aside class="contact-form">        
             <form>
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
-        </form></aside>
+        </form>
+    </aside>
     </footer>
 </body>
 </html>

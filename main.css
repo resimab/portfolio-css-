@@ -4,6 +4,8 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* navigation */
 header{
     padding: 0;
     margin: 0;
@@ -51,6 +53,8 @@ button {
 button:hover{
     transform: scale(1.1);
 }
+
+/* main body */
 .portfolio-section{
     background-image: url("buddha.jpg");
     height: 100vh;
@@ -79,6 +83,8 @@ button:hover{
     font-weight: 600;
     letter-spacing: 5px;
 }
+
+/* about me section */
 section{
     display: flex;
     flex-direction: column;
@@ -154,6 +160,63 @@ section button:hover{
     box-shadow: 0 0 15px rgba(55, 50, 50, 0.5);
 }
 
+/* skills and technologies */
+#skills, #projects{
+    background-color: rgb(240, 240, 240);
+    padding: 40px 20px;
+    text-align: center;
+}
+h1{
+    color: rgb(17, 18, 18);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+h2{
+    color: rgb(33, 95, 95);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.Languages, .Frameworks, .Tools{
+    background-color: rgb(228, 235, 242);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 150px ;
+}
+.Languages p, .Frameworks p, .Tools p{
+    font-size: 16px;
+    color: rgb(55, 55, 55);
+}
+/* projects */
+#projects div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    overflow: auto;
+}
+
+.project{
+    background-color: rgb(228, 235, 242);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 200px ;
+    text-align: center;
+    display: block;
+}
 /* footer */
 footer{
     height: 200px;
