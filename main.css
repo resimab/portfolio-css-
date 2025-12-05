@@ -56,7 +56,7 @@ button:hover{
 
 /* main body */
 .portfolio-section{
-    background-image: url("buddha.jpg");
+    background-image: url("./photos/buddha.jpg");
     height: 100vh;
     background-size: contain;
 }
