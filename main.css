@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(221, 228, 235);
+    /* background-color: rgb(163, 176, 189); */
     font-family: sans-serif, Arial, Helvetica;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 8px 8px;
-    background-color: rgb(235, 230, 230);
+    background-color: transparent;
     
 }
 nav h3{
@@ -191,7 +191,7 @@ section button:hover{
 
 /* skills and technologies */
 #skills{
-    background-color: rgb(182, 210, 122);
+    background-color: rgb(240, 243, 234);
     padding: 40px 40px;
     text-align: center;
 }
@@ -239,7 +239,7 @@ h2{
  #projects{
     padding: 40px 40px; 
     text-align: center;
-    background-color: rgb(137, 210, 122);
+    background-color: rgb(226, 243, 223);
  }
  .subtitle{
     font-size: 16px;
@@ -294,7 +294,7 @@ h2{
 } */
  footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     padding: 40px;
     gap: 30px;
@@ -359,6 +359,11 @@ input, textarea {
 
 .social:hover i {
     transform: scale(1.15);
+}
+.footer-form{
+    background-color: #a5aaad;
+    border-radius:5px;
+    padding: 25px;
 }
 
 /* MEDIA QUERIES START HERE */
