@@ -10,7 +10,7 @@
 </head>
 <body class="bg-white-50">
     <!-- hero section -->
-    <header class="h-screen">
+    <header class="h-auto">
         <nav class="bg-lime-950 w-full max-w-7xl text-white p-4 flex flex-row justify-between items-center font-sans px-8 py-4 rounded-full mx-auto my-4">
 
             <!-- logo+name -->
@@ -36,9 +36,9 @@
         </nav>
 
         <!-- hero content -->
-        <section class="w-full flex flex-row items-center justify-center ml-16 my-16 ">
+        <section class="w-full flex flex-row items-center justify-center m-16 ">
             <!-- left part -->
-            <div class="flex flex-col items-center justify-center w-1/2">
+            <div class="flex flex-col items-start justify-center w-1/2">
                 <!-- text content -->
                 <div >
                 <p class="inline-block border-2 border-orange-400 px-4 py-1 mb-6  font-normal">Hello There!</p>
@@ -90,64 +90,92 @@
 
     <main>
         <section>
-        <p><span>-</span>Skills</p>
+            <div class="flex flex-col justify-center items-start p-10 ml-16 mr-16 mb-16 ">
+        <p class="text-gray-500 text-sm font-medium mb-2"><span class="text-yellow-500">-</span> Skills</p>
 
-        <div>
-        <h1><span>Skills</span> I Have</h1>
-        <button>View All Skills</button>
+        <div class="flex flex-row h-auto items-center justify-between w-full mb-10">
+        <h1 class="text-5xl font-semibold "><span class="text-yellow-500"><i>Skills</i></span> I Have</h1>
+
+        <div class="flex flex-row items-center bg-yellow-400 rounded-full px-1 py-1 w-60">
+                     <button class="bg-green-900 text-white px-6 py-3 rounded-full hover:scale-105 transition">View All Skills</button> 
+                <div class="flex items-center justify-center bg-white rounded-full w-12 h-12 ml-4"><svg class="w-5 h-5 fill-black-900 " viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"></path></svg>
+                </div>
         </div>
+    </div>
 
-        <div>
-            <div>
-                <img src="react.png">
-                <b>React</b>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti fuga ad, beatae repudiandae reiciendis voluptas pariatur minus laudantium rerum dolor illo porro numquam laboriosam quo est magnam aut cum aspernatur!</p>
-                <a>Learn More</a>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+
+            <div class="border-gray-100 rounded-md flex flex-col items-center justify-center  bg-slate-300 hover:scale-105 transition">
+                <div class="flex flex-col items-start justify-center p-6 gap-4">
+                <img src="react.png" class="w-20 h-20">
+                <h1 class="font-bold text-2xl">React</h1>
+                <p class="font-light text-grey-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti fuga ad, beatae repudiandae reiciendis voluptas pariatur.....  </p>
+                <a class="hover:text-sky-400 hover:underline hover:cursor-pointer">Learn More</a>
+                </div>
             </div>
 
-            <div>
-                <img src="webdesign.png">
-                <b>Responsive Web Design</b>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti fuga ad, beatae repudiandae reiciendis voluptas pariatur minus laudantium rerum dolor illo porro numquam laboriosam quo est magnam aut cum aspernatur!</p>
-                <a>Learn More</a></div>
+            <div class="border-gray-100 rounded-md flex flex-col items-center justify-center  bg-slate-300 hover:scale-105 transition">
+                <div class="flex flex-col items-start justify-center p-6 gap-4">
+                <img src="webdesign.png" class="w-20 h-20">
+                <h1 class="font-bold text-2xl">Responsive Web Design</h1>
+                <p class="font-light text-grey-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti fuga ad, beatae repudiandae reiciendis voluptas pariatur.....</p>
+                <a class="hover:text-sky-400 hover:underline hover:cursor-pointer">Learn More</a></div>
+            </div>
 
-            <div>
-                <img src="ui.png">
-                <b>UI/UX Design</b>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti fuga ad, beatae repudiandae reiciendis voluptas pariatur minus laudantium rerum dolor illo porro numquam laboriosam quo est magnam aut cum aspernatur!</p>
-                <a>Learn More</a></div>
-        </div></section>
+            <div class="border-gray-100 rounded-md flex flex-col items-star  bg-slate-300 hover:scale-105 transition">
+                <div class="flex flex-col items-start justify-center p-6 gap-4">
+                <img src="ui.png" class="w-20 h-20">
+                <h1 class="font-bold text-2xl">UI/UX Design</h1>
+                <p class="font-light text-grey-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti fuga ad, beatae repudiandae reiciendis voluptas pariatur.....</p>
+                <a class="hover:text-sky-400 hover:underline hover:cursor-pointer">Learn More</a></div>
+            </div>
+        </div>
+    </div>
+    </section>
 
-        <section class="bg-green-900">
+    <!-- about me section -->
+        <section class="bg-lime-950 h-auto text-white">
+            <!-- left section of about me -->
+            <!-- <div>
+                <div class="rounded-full">
+                    <img src="profile.jpg" class="w-100 h-100">
+                </div>
+            </div> -->
             <!-- about me right -->
-            <div class="flex flex-col items-center justify-center">
-                <p><span>-</span>About Me</p>
-                <h1><span>Who is</span>
-                    <span>Resima?</span></h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, repellat dignissimos est consectetur doloremque architecto sed error aspernatur debitis voluptates, culpa corporis omnis nesciunt maiores, ea rerum reprehenderit exercitationem eius?</p>
+            <div class="flex flex-col items-start justify-center gap-4 w-1/2">
+                <p class="font-medium text-sky-100 "><span class="text-yellow-500">-</span> About Me</p>
+                
+        <h1 class="text-5xl font-semibold ">Who is <span class="text-yellow-500"><i>Resima?</i></span></h1>
+                <p class="text-gray-500 text-sm font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, repellat dignissimos est consectetur doloremque.</p>
                 
                 <div class="flex flex-row justify-around items-center gap-6">
-                    <div>
-                        <p>10+</p>
-                    <p>Projects</p>
+                    <div class="flex flex-col items-start justify-center gap-2">
+                        <p class="font-medium text-3xl text-yellow-500">10+</p>
+                    <p class="text-gray-500 text-sm font-medium">Projects</p>
                     </div>
 
-                     <div>
-                        <p>3+</p>
-                    <p>Languages</p>
+                     <div  class="flex flex-col items-start justify-center gap-2">
+                        <p class="font-medium text-3xl text-yellow-500">3+</p>
+                    <p class="text-gray-500 text-sm font-medium">Languages</p>
                     </div>
 
-                     <div>
-                        <p>2+</p>
-                    <p>Year of Experience</p>
+                     <div  class="flex flex-col items-start justify-center gap-2">
+                        <p class="font-medium text-3xl text-yellow-500">2+</p>
+                    <p class="text-gray-500 text-sm font-medium">Year of Experience</p>
                     </div>
                 </div>
 
                 <div>
-                    <button>Download CV</button>
+                    <div class="flex flex-row items-center bg-yellow-400 rounded-full px-1 py-1">
+                     <button class="bg-lime-950 text-white px-6 py-3 rounded-full hover:scale-105 transition">Download CV</button> 
+                <div class="flex items-center justify-center bg-white rounded-full w-12 h-12 ml-4"><svg class="w-5 h-5 fill-black-900 " viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"></path></svg>
+                </div>
                 </div>
             </div>
-
+</div>
         </section>
 
         <section>
